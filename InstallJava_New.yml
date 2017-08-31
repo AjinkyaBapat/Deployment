@@ -1,0 +1,33 @@
+---
+- hosts: mgmt
+  sudo: yes
+  
+  tasks:
+
+    - name: Ensure required packages are installed for Java 7
+      apt: name={{ item }} state=latest update_cache=yes
+      with_items:
+      - python-software-properties
+
+    - name: Add Java repository to sources
+      action: apt_repository repo='ppa:webupd8team/java'
+
+    - name: Autoaccept license for Java
+      debconf: name='oracle-java7-installer' question='shared/accepted-oracle-license-v1-1' value='true' vtype='select'
+
+    - name: Update APT package cache
+      apt: update_cache=yes
+
+    - name: Remove existing java7 tar
+      shell: rm -rf /home/ajinkyabapat/var/cache/oracle-jdk7-installer/jdk-7u80-linux-x64.tar.gz
+
+    - name: Copy setup
+      copy:
+        src: /home/ajinkyabapat/AnsiblePlayground/Demo/jdk-7u80-linux-x64.tar.gz
+        dest: /var/cache/oracle-jdk7-installer/
+
+    - name: Install Java 7
+      apt: pkg=oracle-java7-installer state=latest install_recommends=yes
+
+    - name: Set Java 7 Env
+      apt: pkg=oracle-java7-set-default state=latest install_recommends=yes

@@ -1,0 +1,17 @@
+---
+- hosts: mgmt
+
+  vars:
+    java:
+      java7:
+        download: 'http://download.oracle.com/otn/java/jdk/7u80-b15/jdk-7u80-linux-x64.tar.gz'
+        args: 'Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=acc' 
+
+  tasks:
+    - name: download Java
+      get_url:
+        url: "{{ item.value.download }}"
+        dest: /tmp
+        headers: "{{ item.value.args }}"
+        force: no
+      with_dict: "{{ java }}"
