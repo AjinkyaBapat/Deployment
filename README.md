@@ -1,3 +1,3 @@
-<a href='http://af0a64b7.ngrok.io/job/enfold-lego/'><img src='http://af0a64b7.ngrok.io/job/enfold-lego/badge/icon'></a>
+[![Build Status](http://af0a64b7.ngrok.io/job/enfold-lego/22/badge/icon)](http://af0a64b7.ngrok.io/job/enfold-lego/22/)
 
 # Deployment
