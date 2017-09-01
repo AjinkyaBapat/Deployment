@@ -2,6 +2,6 @@
 - hosts: localhost
 
   tasks:
-    - name: dPrint message
-    shell:echo 'Hello GitLab :)'
+    - name: Print message
+      shell: echo 'Hello GitLab :)'
 
