@@ -3,5 +3,5 @@
 
   tasks:
     - name: Print message
-      shell: echo 'Hala Madrid y Nada Mas! Hello GitLab :)'
+      shell: echo 'Hello GitLab :)'
 
