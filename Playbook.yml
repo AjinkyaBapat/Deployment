@@ -3,5 +3,5 @@
 
   tasks:
     - name: Print message
-      shell: echo 'New Hello World! Ajinkya :)'
+      shell: echo 'Hello World! Ajinkya :)'
 
