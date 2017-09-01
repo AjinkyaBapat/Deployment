@@ -4,4 +4,6 @@
 
 [![Jenkins](https://img.shields.io/badge/GitLab%20Build-Passing-blue.svg?style=plastic)](http://af0a64b7.ngrok.io/job/gitlab-sample/)
 
+[![Jenkins](https://img.shields.io/jenkins/s/https/jenkins.qa.ubuntu.com/view/Precise/view/All%20Precise/job/precise-desktop-amd64_default.svg?style=flat-square)](http://af0a64b7.ngrok.io/job/gitlab-sample/)
+
 # Deployment
