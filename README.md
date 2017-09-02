@@ -1,6 +1,6 @@
-[![Build Status](http://af0a64b7.ngrok.io/buildStatus/icon?job=enfold-lego&build=22)](http://af0a64b7.ngrok.io/job/enfold-lego/22/)
+[![Build Status](https://mylocaljenkins.localtunnel.me/buildStatus/icon?job=enfold-lego&build=22)](https://mylocaljenkins.localtunnel.me/job/enfold-lego/22/)
 
-[![Build Status](http://af0a64b7.ngrok.io/buildStatus/icon?job=gitlab-sample)](http://af0a64b7.ngrok.io/job/gitlab-sample/)
+[![Build Status](https://mylocaljenkins.localtunnel.me/buildStatus/icon?job=gitlab-sample)](https://mylocaljenkins.localtunnel.me/job/gitlab-sample/)
 
 
 # Deployment
