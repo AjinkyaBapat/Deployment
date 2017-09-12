@@ -1,0 +1,20 @@
+before_script:
+  - apt-get update
+  - apt-get install software-properties-common
+  - apt-add-repository ppa:ansible/ansible
+  - apt-get update
+  - apt-get install ansible
+  - ansible --version
+
+stages:
+  - build
+
+job1:
+  stage: build
+  script:
+    - ansible-playbook Playbook.yml
+  only:
+    - master
+  tags:
+    - ansible
+
