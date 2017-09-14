@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: locals
 
   tasks:
     - name: Print message
