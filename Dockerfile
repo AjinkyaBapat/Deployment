@@ -23,4 +23,3 @@ RUN echo "====> Adding Ansible's PPA... <===="  && \
     rm -rf /var/lib/apt/lists/*  /etc/apt/sources.list.d/ansible.list
 
 CMD [ "ansible-playbook", "--version" ]
-
