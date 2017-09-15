@@ -1,6 +1,3 @@
-[![Build Status](https://mylocaljenkins.localtunnel.me/buildStatus/icon?job=enfold-lego&build=22)](https://mylocaljenkins.localtunnel.me/job/enfold-lego/22/)
-
-[![Build Status](https://mylocaljenkins.localtunnel.me/buildStatus/icon?job=gitlab-sample)](https://mylocaljenkins.localtunnel.me/job/gitlab-sample/)
-
+[![Build Status](https://semaphoreci.com/api/v1/ajinkyabapat/deployment/branches/master/badge.svg)](https://semaphoreci.com/ajinkyabapat/deployment)
 
 # Deployment
